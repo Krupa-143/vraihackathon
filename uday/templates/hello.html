@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Story Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image to Story Generator</h1>
+        <form id="storyForm">
+            <label for="image">Upload an Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+            <label for="prompt">Enter a Prompt:</label>
+            <textarea id="prompt" name="prompt" placeholder="What do you want?" required></textarea><br><br>
+
+            <button type="submit">Generate Story</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

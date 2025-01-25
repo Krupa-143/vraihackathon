@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7FDBFF, #39CCCC);
+    color: #222;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 700px;
+    background: #F6F9FC;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #0074D9;
+    text-shadow: 2px 2px 4px #3D9970;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #85144b;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #2ECC40;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+textarea:focus, input:focus {
+    border-color: #01FF70;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #3D9970, #2ECC40);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2ECC40, #3D9970);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#output {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(240, 255, 255, 0.95);
+    border: 3px dashed #01FF70;
+    border-radius: 16px;
+    font-size: 1.3rem;
+    color: #111;
+    font-style: italic;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #39CCCC;
+    color: white;
+    margin-top: 25px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    border-radius: 0 0 20px 20px;
+}
